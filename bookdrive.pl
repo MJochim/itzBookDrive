@@ -19,9 +19,10 @@ use Wx;
 use Fcntl;
 
 # Paths to helper programs
-my $gphoto2 = "/home/it-zentrum/BookDrive/gphoto2-patch";
-my $postprocess = "/home/it-zentrum/BookDrive/postprocess.sh";
-my $uploader = "/home/it-zentrum/BookDrive/upload.sh";
+my $gphoto2 = "/usr/local/bin/gphoto2-patch";
+my $postprocess = "/usr/local/bin/postprocess.sh";
+my $uploader = "/usr/local/bin/upload.sh";
+my $imageViewer = "eog -w";
 
 ### Path where scans are saved (in a sub-directory for each book)
 my $path = "/home/it-zentrum/BookDrive/Projekte/";
@@ -212,14 +213,14 @@ sub OnPaintRightImage {
 sub OnClickLeftImage {
 	if ( $filenameLeft ne "" ) {
 		## Start external image viewer
-		system( "eog -w '$filenameLeft' &" ); 
+		system( $imageViewer . " '$filenameLeft' &" ); 
 	}
 }
 
 sub OnClickRightImage {
 	if ( $filenameRight ne "" ) {
 		## Start external image viewer
-		system( "eog -w '$filenameRight' &" );
+		system( $imageViewer . " '$filenameRight' &" );
 	}
 }
 

@@ -35,6 +35,8 @@
 ## 
 ## 06.03.2014
 ## - Started GIT repository
+## - Made image viewer configurable
+## - Changed location of helper programs and scripts to /usr/local/bin
 ##
 ###
 ################################################################################
