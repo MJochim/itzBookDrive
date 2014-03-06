@@ -1,0 +1,22 @@
+################################################################################
+###                                                                          ###
+###   ATTENTION CODERS!                                                      ###
+###                                                                          ###
+### This software uses                                                       ###
+### - WxPerl to create a GUI,                                                ###
+### - GPhoto2 to take photos (I now use a hackily patched, faster version),  ###  
+### - and ImageMagick to rotate them and create thumbnails.                  ###
+###                                                                          ###
+### From top to bottom of this file, you will find                           ###
+### - some settings, most notably the path where scans are saved,            ###
+### - the definitions of the GUI controls (in sub new, up to ca. line 160),  ###
+### - event handlers including OnTrigger(), which does most of the work,     ###
+###   and OnClickStartWorkflow(), which does some important initialisation,  ###
+### - some code to detect the cameras.                                       ###
+###                                                                          ###
+###                                                                          ###
+### FIXME                                                                    ###
+### - Der Trigger-Knopf verhindert nicht, dass man mehrmals hintereinander   ###
+###   draufdrückt                                                            ###
+###                                                                          ###
+################################################################################

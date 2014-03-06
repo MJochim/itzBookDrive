@@ -1,0 +1,41 @@
+################################################################################
+###
+### Change log
+###
+###
+##
+## 29.06.2012
+## - Initial CLI version
+##
+## 02./03.08.2012:
+## - Initial GUI version
+##
+## 24.08.2012
+## - Red Background while scanning
+## - Fixed wrong numbering of left and right page
+##
+## 29.08.2012:
+## - Added exit button
+## - Start external image viewer when a thumbnail is clicked
+## - Created a separate thumbnail subdirectory
+## - Before scanning, the script now checks whether that page number has been
+##   scanned before, and if so, moves the old scan(s) to a separate "discarded"
+##   subdir
+## - Implemented the hardware trigger
+##
+## 19.11.2012
+## - Now uses patched version of gphoto2 and thus a custom (configurable) path
+## - The system calls for gphoto, jpegtran and convert are now only one (more
+##   or less solid) system call
+## - This call even includes both images and only returns when both have 
+##   definitely been finished (before, one of the images might still have been
+##   in processing when the perl code retained control
+## - Fixed the feature that prevents two scans of the same page in the main dir
+##   (by moving older ones to a discarded-subdir) (ACTUALLY THIS IS stiLL BuggY)
+## 
+## 06.03.2014
+## - Started GIT repository
+##
+###
+################################################################################
+
