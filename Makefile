@@ -1,6 +1,6 @@
 default:
 	@echo "No compiling needed"
 
-install:
+install: 
 	install -m755 -t /usr/local/bin bookdrive.pl upload.sh postprocess.sh
 	
