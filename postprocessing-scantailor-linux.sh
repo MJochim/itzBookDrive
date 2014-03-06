@@ -1,13 +1,5 @@
 #!/bin/bash
 
-
-ssh user@server /Users/user/postprocess.sh ${1}
-exit
-
-
-
-####################
-
 parallel=4
 dir=$1
 outDir=${1}scantailor-out
@@ -35,4 +27,5 @@ do
 
 	scantailor-cli --color-mode=mixed "$dir/$name" "$outDir" &
 done
+
 
