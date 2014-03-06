@@ -1,0 +1,1 @@
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="0925", ATTRS{idProduct}=="1234", NAME="input/trigger", MODE="0644"
