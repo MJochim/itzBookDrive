@@ -20,12 +20,12 @@ use Fcntl;
 
 # Paths to helper programs
 my $gphoto2 = "/usr/local/bin/gphoto2-patch";
-my $postprocess = "/usr/local/bin/postprocess.sh";
+my $postprocess = "/usr/local/bin/remote-postprocessing.sh";
 my $uploader = "/usr/local/bin/upload.sh";
 my $imageViewer = "eog -w";
 
 ### Path where scans are saved (in a sub-directory for each book)
-my $path = "/home/it-zentrum/BookDrive/Projekte/";
+my $path = "./Projekte/";
 
 ### Serial numbers of the two cameras
 my %serials=("3271c4ab65e8489cb05f87f281a74344" => "LE",  # LEft
@@ -191,7 +191,7 @@ sub MakeBold {
 
 sub OnTimer {
 	## Read trigger device in non-blocking mode
-	debug ("timing");
+	#debug ("timing");
 	my $buffer;
 	while ( read ( $trigger, $buffer, 144 ) ) {
 		debug("triggering by timer");
