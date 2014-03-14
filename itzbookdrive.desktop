@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=ItzBookDrive
+Comment=Workflow for scanning books at the BookDrive Mini
+Comment[de]=Einfacher Texteditor
+Exec=bookdrive.pl
+Icon=
+Terminal=true
+Type=Application
+Categories=Utility;
